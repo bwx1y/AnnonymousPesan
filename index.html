@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/bootstrap.css" />
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon" />
+    <title>Annonymous | Massage</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top" id="Nav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="src/img/favicon.ico" alt="logo" width="30" height="24" class="d-inline-block align-text-top" />
+          BWX1Y
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="https://bwx1y.github.io/#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/questions.html">Questions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ahir nav -->
+
+    <div class="container">
+      <div class="row vh-100 d-flex aling-items-center justify-content-center">
+        <div class="col-8 mt-5 pt-9">
+          <form name="submit-to-google-sheet">
+            <div class="card border-primary mb-3">
+              <h5 class="card-header text-center">Anoonymous Message</h5>
+              <div class="card-body text-dark">
+                <div class="mb-3">
+                  <input type="text" name="id" class="d-none" id="id" value="" />
+                  <label for="message" class="form-label">Message For Nedy :</label>
+                  <textarea class="form-control" id="message" rows="3" name="pesan" id="pesan" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-primary kirim">Kirim</button>
+                <button class="btn btn-primary loading d-none" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/bootstrap.bundle.js"></script>
+    <script src="src/js/jquery-3.6.1.min.js"></script>
+    <script src="src/js/sweetalert2.all.min.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
